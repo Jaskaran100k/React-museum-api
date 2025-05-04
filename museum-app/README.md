@@ -1,54 +1,28 @@
-# React + TypeScript + Vite
+Museum Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple web app that shows artworks from The Metropolitan Museum of Art collection.
+API Used
 
-Currently, two official plugins are available:
+I used The Met's public API to get data about artworks. The API provides details about thousands of objects in their collection.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+API Docs: [Metropolitan Museum API](https://metmuseum.github.io/)
 
-## Expanding the ESLint configuration
+How I Accessed the Data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+I accessed the API using React and TypeScript. First, I made a request to search for artworks (e.g., paintings, sculptures). Then, I used the artwork IDs to get more details about each object, like its image, title, and artist.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Here's the basic code to get started:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![image](https://github.com/user-attachments/assets/82bcfad5-1630-4e3c-8573-44341523b519)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Screenshots
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+If you'd like to see how the app looks, here are a few screenshots:
+
+    Home Page: 
+    ![image](https://github.com/user-attachments/assets/259a9925-55b4-4767-b33e-ed88660e484a)
+
+    ![Uploading image.png…]()
+
+    
+
