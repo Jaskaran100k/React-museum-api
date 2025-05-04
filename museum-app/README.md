@@ -19,10 +19,11 @@ Screenshots
 
 If you'd like to see how the app looks, here are a few screenshots:
 
-    Home Page: 
-    ![image](https://github.com/user-attachments/assets/259a9925-55b4-4767-b33e-ed88660e484a)
+Home Page: 
+![image](https://github.com/user-attachments/assets/259a9925-55b4-4767-b33e-ed88660e484a)
 
-    ![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/41fdda6a-5fd5-4c18-baf7-f8414a1b23ac)
+
 
     
 
